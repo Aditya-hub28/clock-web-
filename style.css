@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #59bbdf;
+    font-family: Arial, sans-serif;
+}
+
+.clock {
+    width: 300px;
+    height: 300px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    background: #dcd2d2;
+}
+
+.hand {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform-origin: bottom center;
+    transform: translateX(-50%) rotate(0deg);
+    border-radius: 6px;
+}
+
+.hour {
+    width: 8px;
+    height: 70px;
+    background: #fff;
+}
+
+.minute {
+    width: 5px;
+    height: 90px;
+    background: #ccc;
+}
+
+.second {
+    width: 3px;
+    height: 110px;
+    background: red;
+}
+
+.center {
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Numbers around the clock */
+.num {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+}
+
+.num1  { top: 35px;  right: 85px; }
+.num2  { top: 70px;  right: 40px; }
+.num3  { top: 140px; right: 20px; }
+.num4  { bottom: 70px; right: 40px; }
+.num5  { bottom: 35px; right: 85px; }
+.num6  { bottom: 20px; left: 150px; }
+.num7  { bottom: 35px; left: 80px; }
+.num8  { bottom: 70px; left: 40px; }
+.num9  { top: 140px; left: 20px; }
+.num10 { top: 70px;  left: 40px; }
+.num11 { top: 35px;  left: 85px; }
+.num12 { top: 20px;  left: 150px; }
